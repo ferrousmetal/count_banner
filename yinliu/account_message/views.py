@@ -11,7 +11,7 @@ class DouYinmessageView(View):
 
     def get(self, request):
         num = DouyinMessageModel.objects.get(id=1)
-        num.douyincount += 1
+        num.dmessagecount += 1
         num.save()
         return HttpResponse("私信加一")
 
@@ -21,7 +21,7 @@ class DouYinCommentView(View):
 
     def get(self, request):
         num = DouyinMessageModel.objects.get(id=1)
-        num.douyincount += 1
+        num.dcommentcount += 1
         num.save()
         return HttpResponse("评论加一")
 
@@ -31,7 +31,7 @@ class QuickHandmessageView(View):
 
     def get(self, request):
         num = QuickHandMessageModel.objects.get(id=1)
-        num.quickhandcount += 1
+        num.qmessagecount += 1
         num.save()
         return HttpResponse("私信加一")
 
@@ -41,7 +41,7 @@ class QuickHandCommenteView(View):
 
     def get(self, request):
         num = QuickHandMessageModel.objects.get(id=1)
-        num.quickhandcount += 1
+        num.qcommentcount += 1
         num.save()
         return HttpResponse("评论加一")
 
@@ -51,7 +51,7 @@ class guimiQuanmessageView(View):
 
     def get(self, request):
         num = QuickHandMessageModel.objects.get(id=1)
-        num.quickhandcount += 1
+        num.guimimessagecount += 1
         num.save()
         return HttpResponse("私信加一")
 
@@ -61,7 +61,7 @@ class guimiQuanCommentView(View):
 
     def get(self, request):
         num = QuickHandMessageModel.objects.get(id=1)
-        num.quickhandcount += 1
+        num.guimicommentcount += 1
         num.save()
         return HttpResponse("评论加一")
 
@@ -71,7 +71,7 @@ class xiguamessageView(View):
 
     def get(self, request):
         num = QuickHandMessageModel.objects.get(id=1)
-        num.quickhandcount += 1
+        num.xiguamessagecount += 1
         num.save()
         return HttpResponse("私信加一")
 
@@ -81,7 +81,7 @@ class xiguaCommentView(View):
 
     def get(self, request):
         num = QuickHandMessageModel.objects.get(id=1)
-        num.quickhandcount += 1
+        num.xigaucommentcount += 1
         num.save()
         return HttpResponse("评论加一")
 
