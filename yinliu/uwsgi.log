@@ -1,0 +1,15 @@
+*** Starting uWSGI 2.0.17.1 (64bit) on [Tue Jun 25 16:08:55 2019] ***
+compiled with version: 5.4.0 20160609 on 16 December 2018 08:58:27
+os: Linux-4.4.0-117-generic #141-Ubuntu SMP Tue Mar 13 11:58:07 UTC 2018
+nodename: iZ2zeg6uxwol9mzlugcosiZ
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /count_banner/yinliu
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to count_banner/yinliu
+chdir(): No such file or directory [core/uwsgi.c line 2631]
