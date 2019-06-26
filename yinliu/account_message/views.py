@@ -50,7 +50,7 @@ class guimiQuanmessageView(View):
     """闺蜜全计数器"""
 
     def get(self, request):
-        num = QuickHandMessageModel.objects.get(id=1)
+        num = GuimiquanMessageModel.objects.get(id=1)
         num.guimimessagecount += 1
         num.save()
         return HttpResponse("私信加一")
@@ -60,7 +60,7 @@ class guimiQuanCommentView(View):
     """闺蜜全数器"""
 
     def get(self, request):
-        num = QuickHandMessageModel.objects.get(id=1)
+        num = GuimiquanCommentModel.objects.get(id=1)
         num.guimicommentcount += 1
         num.save()
         return HttpResponse("评论加一")
@@ -70,7 +70,7 @@ class xiguamessageView(View):
     """闺蜜全计数器"""
 
     def get(self, request):
-        num = QuickHandMessageModel.objects.get(id=1)
+        num = xiguaMessageModel.objects.get(id=1)
         num.xiguamessagecount += 1
         num.save()
         return HttpResponse("私信加一")
@@ -80,7 +80,7 @@ class xiguaCommentView(View):
     """闺蜜全数器"""
 
     def get(self, request):
-        num = QuickHandMessageModel.objects.get(id=1)
+        num = xiguaCommentModel.objects.get(id=1)
         num.xigaucommentcount += 1
         num.save()
         return HttpResponse("评论加一")
