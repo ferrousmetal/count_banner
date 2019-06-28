@@ -81,7 +81,7 @@ class xiguaCommentView(View):
 
     def get(self, request):
         num = xiguaCommentModel.objects.get(id=1)
-        num.xigaucommentcount += 1
+        num.xiguacommentcount += 1
         num.save()
         return HttpResponse("评论加一")
 
